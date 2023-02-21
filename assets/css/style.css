@@ -1,0 +1,180 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #121212;
+    height: 100vh;
+    width: 100%;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+
+aside {
+    display: none;
+}
+
+ ul {
+    display: flex;
+    list-style: none;
+   
+}
+
+ li {
+    display: flex;
+}
+
+  header a, .esquerda a {
+    display: inline-block;
+    margin: 45px;
+    text-decoration: none;
+    color: white;
+}
+
+header a:hover {
+    background-color: #e51e2a;
+    transform: translateY(-5px);
+    border-radius: 20px;
+    transition: 0.5ms;
+    border: 1px solid #fff;
+}
+
+.principal {
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-between;
+}
+
+section.esquerda {
+    display: flex;
+    margin-left: 50px;
+}
+
+.esquerda h2 {
+    color: white;
+    font-size: 2.5em;
+    font-weight: bolder;
+}
+
+.esquerda span {
+    color: #e51e2a;
+    font-size: 5rem;
+    font-weight: bolder;
+}
+
+.esquerda p {
+    color: white;
+}
+
+.text {
+    width: 600px;
+}
+
+.text a {
+    border: none;
+    border-radius: 20px;
+    background-color: #e51e2a;
+    padding: 5px;
+}
+
+section.direita img {
+    width: 150px;
+    margin-right: 35px;
+}
+
+.circle {
+    background: #e51e2a bottom right;
+    border-radius: 50%;
+}
+
+.text a:hover {
+    transform: translateY(-20px);
+    border: 1px solid #fff;
+}
+
+section.redes a {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+}
+
+section.redes  img {
+    width: 40px;
+    height: 40px;
+}
+
+
+@media screen and (max-width: 1100px) {
+    .principal {
+        display: block;
+    }
+
+    .esquerda {
+        display: block;
+    }
+
+    .direita {
+        display: block;
+    }
+
+    .direita .circle {
+        display: flex;
+        align-items: center;
+        margin-bottom: 70px;
+        height: 700px;
+        width: 800px;
+        padding-left: 40px;
+       
+    }
+
+    .direita img {
+        display: flex;
+        width: 120px;
+        height: 330px;
+        margin-bottom: 50px; justify-content: center;
+    }
+
+} 
+
+/* futuramente atualizarei este código para tornalo responsivo a outros tamanhos de tela...
+ @media screen and (min-width: 320px ) {
+
+    .logo img {
+        margin-right: 320px;
+        height: 50px;
+        width: 100px;
+        
+    }
+
+    nav {
+        display: none;
+    }
+
+    p {
+        width: 400px;
+    }
+
+    aside {
+        display: block;       
+         
+    }
+
+    .material-symbols-outlined {
+        color: white;
+    }
+
+    span {
+    }
+} */
